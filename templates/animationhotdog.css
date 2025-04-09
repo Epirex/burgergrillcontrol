@@ -1,0 +1,41 @@
+body {
+	background-color: #006e5e;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.plate {
+	margin: 0 auto;
+	padding-top: 10vh; /* Se adapta a la altura de la pantalla */
+	width: 80vw; /* Ajuste relativo al ancho de la pantalla */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hotdog {
+    width: 50vw; /* Ajuste al ancho de la pantalla */
+    transform: scale(0.8); /* Ajuste dinámico */
+    transform-origin: center;
+    max-width: 100%; /* Para evitar que el hotdog se salga del contenedor */
+    margin-left: 3vw;
+}
+
+@keyframes apply-mustard {
+	0% { offset-distance: 100%; }
+	100% { offset-distance: 0; }
+}
+
+#mustardpath {
+	stroke-dasharray: 499;
+	stroke-dashoffset: -499;
+	animation: dash 3s infinite;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}

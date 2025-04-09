@@ -1,0 +1,2 @@
+2024-12-12 17:29:35,451 - ERROR - Error en el servidor WebSocket: [Errno 10048] error while attempting to bind on address ('::1', 8765, 0, 0): solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+2024-12-12 18:32:54,228 - ERROR - Error en el servidor WebSocket: [Errno 10048] error while attempting to bind on address ('::1', 8765, 0, 0): solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)

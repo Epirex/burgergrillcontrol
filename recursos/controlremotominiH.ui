@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Plus Jakarta Sans,Noto Sans,sans-serif</family>
+    <pointsize>2</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Ajustes generales de la aplicación */
+QWidget {
+    background-color: #131f2b; /* Fondo oscuro */
+    font-family: &quot;Plus Jakarta Sans&quot;, &quot;Noto Sans&quot;, sans-serif;
+    color: #B0C5D6; /* Color de texto claro */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>ControlRemotoH.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="camponumerico">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>321</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Plus Jakarta Sans,Noto Sans,sans-serif</family>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Estilo para los inputs de texto */
+QTextEdit {
+     border: 1px solid #30506e;
+	 border-radius: 10px;
+	 padding: 5px 10px;
+	 background-color: #1a2c3c;
+	 color: #FFFFFF;
+     min-height: 40px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn9">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>290</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-9_9543521.png</normaloff>number-9_9543521.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>116</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    background-color:; /* Fondo blanco */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-2.png</normaloff>number-2.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn4">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>200</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-4_9543296.png</normaloff>number-4_9543296.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>116</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-3.png</normaloff>number-3.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn6">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>200</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-6_9543388.png</normaloff>number-6_9543388.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn7">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>290</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-7_9543434.png</normaloff>number-7_9543434.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn8">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>290</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-8_9543482.png</normaloff>number-8_9543482.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn1">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>116</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-1_9543150.png</normaloff>number-1_9543150.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn0">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>376</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>zero_9543146.png</normaloff>zero_9543146.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn5">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>200</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-radius: 35px; /* Radio para hacer el botón redondo */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>number-5_9543340.png</normaloff>number-5_9543340.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>73</width>
+      <height>73</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEnviar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>447</y>
+      <width>111</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Plus Jakarta Sans,Noto Sans,sans-serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Estilo de los botones */
+QPushButton {
+	border:3px #FFF7F7;
+    background-color: #17426a; /* Fondo azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    border-radius: 16px; /* Bordes redondeados para que el botón sea circular */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold;
+    min-height: 20px; /* Altura mínima para alinearlo con TailwindCSS */
+}
+
+QPushButton:hover {
+    background-color: #243b52; /* Cambio de color en hover */
+}
+
+QPushButton:pressed {
+    background-color: #30506e; /* Cambio de color al presionar */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/Proyecto nuevo (5).png</normaloff>../../../Downloads/Proyecto nuevo (5).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>46</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSiguiente">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>341</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Plus Jakarta Sans,Noto Sans,sans-serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Estilo de los botones */
+QPushButton {
+    background-color: #17426a; /* Fondo azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    border-radius: 16px; /* Bordes redondeados para que el botón sea circular */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold;
+    min-height: 20px; /* Altura mínima para alinearlo con TailwindCSS */
+}
+
+QPushButton:hover {
+    background-color: #243b52; /* Cambio de color en hover */
+}
+
+QPushButton:pressed {
+    background-color: #30506e; /* Cambio de color al presionar */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/Proyecto nuevo (7).png</normaloff>../../../Downloads/Proyecto nuevo (7).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>46</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRepetir">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>447</y>
+      <width>121</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Plus Jakarta Sans,Noto Sans,sans-serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Estilo de los botones */
+QPushButton {
+    background-color: #17426a; /* Fondo azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    border-radius: 16px; /* Bordes redondeados para que el botón sea circular */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold;
+    min-height: 20px; /* Altura mínima para alinearlo con TailwindCSS */
+}
+
+QPushButton:hover {
+    background-color: #243b52; /* Cambio de color en hover */
+}
+
+QPushButton:pressed {
+    background-color: #30506e; /* Cambio de color al presionar */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/Proyecto nuevo (6).png</normaloff>../../../Downloads/Proyecto nuevo (6).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>46</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="turnLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    qproperty-alignment: 'AlignCenter';
+    font-size: 15px;          /* Tamaño de fuente un poco más grande para mejor visibilidad */
+    font-weight: bold;
+    color: #FFFFFF;           /* Color blanco para el texto, acorde al fondo oscuro */
+    background-color: #1a2c3c; /* Fondo oscuro para mayor integración con la interfaz */
+    padding: 9px;            /* Añade padding para darle más espacio */
+    border-radius: 8px;       /* Bordes redondeados para que se vea más consistente */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

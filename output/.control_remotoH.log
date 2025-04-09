@@ -1,0 +1,110 @@
+2024-12-02 19:44:55,398 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI26722\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 19:44:55,400 - INFO - Creating writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 19:44:55,400 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 19:44:55,411 - INFO - Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: No module named 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4'
+2024-12-02 19:44:55,414 - INFO - # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2024-12-02 19:44:55,515 - INFO - # Generating comtypes.gen.SpeechLib
+2024-12-02 19:44:55,523 - INFO - Could not import comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0: No module named 'comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0'
+2024-12-02 19:44:55,524 - INFO - # Generating comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0
+2024-12-02 19:44:55,530 - INFO - # Generating comtypes.gen.stdole
+2024-12-02 19:44:55,780 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "controlremotoH.py", line 31, in <module>
+pygame.error: No file 'templates/alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos\output'.
+2024-12-02 19:45:05,913 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:45:10,409 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 19:45:31,809 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 19:45:34,271 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 19:45:40,366 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 19:47:07,653 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI28522\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 19:47:07,655 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 19:47:07,855 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "controlremotoH.py", line 31, in <module>
+pygame.error: No file 'templates/alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos\output'.
+2024-12-02 19:47:14,081 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 19:47:18,951 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:47:22,726 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 19:49:10,588 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI97642\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 19:49:10,589 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 19:49:10,838 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "controlremotoH.py", line 31, in <module>
+pygame.error: No file 'templates/alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos\output'.
+2024-12-02 19:49:15,629 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 20:03:26,811 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI7202\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 20:03:26,813 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 20:03:27,015 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "controlremotoH.py", line 31, in <module>
+pygame.error: No file 'templates/alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos\output'.
+2024-12-02 20:03:32,092 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 20:03:52,841 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 20:05:56,765 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI8322\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 20:05:56,766 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 20:05:56,964 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "controlremotoH.py", line 31, in <module>
+pygame.error: No file 'templates/alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos\output'.
+2024-12-02 20:06:01,248 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 20:06:55,614 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI132762\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 20:06:55,615 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 20:11:10,587 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI105002\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 20:11:10,588 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 20:11:10,790 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "controlremotoH.py", line 31, in <module>
+pygame.error: No file 'alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos\output'.
+2024-12-02 20:11:13,052 - ERROR - Error al reproducir el sonido de alerta
+Traceback (most recent call last):
+  File "controlremotoH.py", line 169, in play_alert_sound
+pygame.error: music not loaded
+2024-12-02 20:11:45,780 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI87522\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 20:11:45,781 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 20:14:45,266 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI24322\\comtypes\\gen\\__init__.pyc'>
+2024-12-02 20:14:45,267 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-02 20:14:56,717 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 20:15:02,571 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 20:15:03,493 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 20:15:10,668 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x00000149A8613190>()
+handle: <Handle <TaskStepMethWrapper object at 0x00000149A8613190>()>
+Traceback (most recent call last):
+  File "asyncio\events.py", line 81, in _run
+RuntimeError: Cannot enter into task <Task pending name='Task-23' coro=<MainApp.add_time() running at controlremotoH.py:110>> while another task <Task pending name='Task-19' coro=<MainApp.say_number_after_delay() running at controlremotoH.py:180>> is being executed.
+2024-12-02 20:15:12,117 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 20:15:15,218 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-23' coro=<MainApp.add_time() running at controlremotoH.py:110>>
+2024-12-04 19:24:35,287 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Temp\\_MEI34002\\comtypes\\gen\\__init__.pyc'>
+2024-12-04 19:24:35,289 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Temp\comtypes_cache\controlremotoH-38'
+2024-12-04 19:24:35,625 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "controlremotoH.py", line 31, in <module>
+pygame.error: No file 'templates/alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos\output'.
+2024-12-04 19:24:43,326 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'

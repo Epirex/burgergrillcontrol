@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Remoto</title>
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="animationhotdog.css">
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Impact', sans-serif;
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        gap: 3vw;
+        height: 90%;
+        padding: 1vw;
+    }
+
+    .column {
+        width: 45%; /* Ajusta este valor según el espacio que quieras dar a cada columna */
+        padding: 2vw;
+        background-color: #333;
+        border-radius: 1.5vw;
+        text-align: center;
+        box-shadow: 0 1vw 5vw rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        transition: border 0.3s ease, transform 0.5s ease;
+}
+
+
+    .columnH {
+        background-color: #444;
+    }
+
+    .columnP {
+        position: relative;
+        background-color: #444;
+    }
+
+    /* Texto de Ventanilla H */
+    .textH {
+        position: absolute;    /* Permite mover el texto independientemente */
+        top: 3%;              /* Ajusta para mover verticalmente dentro de la columna */
+        left: 15%;              /* Ajusta para mover horizontalmente dentro de la columna */
+        font-size: 6vw;
+        color: #f9f9f9;          /* Ajusta este valor para mover a la derecha o izquierda */
+    }
+
+    /* Texto de Ventanilla P */
+    .textP {
+        position: absolute;    /* Permite mover el texto independientemente */
+        top: 3%;              /* Ajusta para mover verticalmente dentro de la columna */
+        left: 15%;              /* Ajusta para mover horizontalmente dentro de la columna */
+        font-size: 6vw;
+        color: #f9f9f9;       /* Ajusta este valor para mover a la derecha o izquierda */
+    }
+
+    .turno-text {
+        font-size: 4vw;
+        font-family: 'Impact', sans-serif;
+        font-weight: 200;
+        color: #bfbdbd;
+        margin-top: 6vw;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #turnosH, #turnosP {
+        width: 100%;
+        font-size: 25vw;
+        font-family: 'Impact', sans-serif;
+        font-weight: 200;
+        color: #bfbdbd;
+        text-align: center;
+    }
+
+
+
+    #watermark, #watermarkP {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.5;
+        width: 50%;
+        pointer-events: none;
+    }
+
+   @font-face {
+    font-family: "Oswald";
+    src: url("fonts/Oswald-Bold.woff2") format("woff2"),
+         url("fonts/Oswald-Bold.woff") format("woff"),
+         url("fonts/Oswald-Bold.ttf") format("truetype");
+    font-weight: bold; /* Esto indica que esta es la variante en negrita */
+    font-style: normal;
+}
+
+
+    .timer {
+        position: absolute;
+        top: 18%;
+        right: 10%;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 4vw;
+        color: #ffdf00;
+        background-color: #555;
+        line-height: 0.001;
+        padding-top: 0.002vw;
+        padding-bottom: 0.002vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        border-radius: 0.3vw;
+        text-align: center;
+        box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.3);
+    }
+
+
+    .hotdog {
+    position: absolute;
+    top: 37%; /* Ajusta según la posición vertical que desees */
+    right: 18%; /* Ajusta según la posición horizontal que desees */
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .demora-text {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: #ffff;  /* Color negro */
+    font-size: 4vw;  /* Ajusta el tamaño según lo que prefieras */
+}
+
+
+
+}
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="column columnH" id="columnH">
+        <div class="textH">Ventanilla H</div>
+        <div class="load" id="animationContainer">
+            <!-- HTML DE LA ANIMACION BURGER -->
+            <div class="hamburger">
+                <div class="top-bun"></div>
+                <div class="pickle"></div>
+                <div class="pickle"></div>
+                <div class="tomato"><div></div></div>
+                <div class="tomato"><div></div></div>
+                <div class="cheese"></div>
+                <div class="cheese"></div>
+                <div class="beef"></div>
+                <div class="bottom-bun"></div>
+            </div>
+        </div>
+        <div class="turno-text" id="turnosH" style="display: none;"></div>
+        <!-- Temporizador ubicado en la columna H -->
+        <div class="timer">
+            <p><span class="demora-text">Demora: </span><span id="delay-timerH">0</span>min</p>
+        </div>
+        <!-- Marca de agua -->
+        <img src="burger-grill-logo.png" alt="Marca de Agua" id="watermark">
+    </div>
+
+    <!--Ventanilla P -->
+    <div class="column columnP" id="columnP">
+    <div class="textP">Ventanilla P</div>
+
+    <!-- Turno de Ventanilla P (oculto por defecto) -->
+    <div class="turno-text" id="turnosP" style="display: none;"></div>
+
+    <!-- Contenedor de la animación del hotdog -->
+    <div class="hotdog" id="animationhotdogContainer" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="500" height="250" viewBox="0 0 610.5 560">
+            <path fill="#e38f49" d="M478.682 92.043c40.705 40.703 40.695 106.683-.003 147.37L268.54 449.554c-40.698 40.693-106.672 40.71-147.376 0-40.708-40.697-40.7-106.68-.002-147.38L331.3 92.04c40.695-40.7 106.676-40.704 147.382.003z"/>
+            <path fill="#9F3621" d="M502.83 79.046c19.54 19.542 18.89 51.874-1.45 72.214L173.32 479.318c-20.34 20.34-52.667 20.994-72.21 1.445l-6.195-6.186c-19.543-19.546-18.886-51.874 1.455-72.214l328.06-328.06c20.337-20.34 52.662-20.993 72.204-1.45l6.196 6.193z"/>
+            <path id="mustardpath" fill="none" stroke="#F4C343" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" d="M472.492 116.362c-6.646 23.175-40.358 20.157-59.28 27.464-18.36 7.095-30.33 23.788-38.4 40.984-9.81 20.917-12.303 45.234-26.718 63.91-13.96 18.105-37.532 18.906-56.484 28.003-18.88 9.07-28.845 26.77-38.85 44.34-12.958 22.767-30.44 28.89-53.3 39.913-39.888 19.24-51.8 49.524-45.342 92.08"/>
+        </svg>
+    </div>
+
+    <!-- Temporizador ubicado en la columna P -->
+    <div class="timer">
+        <p><span class="demora-text">Demora: </span><span id="delay-timerP">0</span>min</p>
+    </div>
+    <!-- Marca de agua para Ventanilla P -->
+    <img src="burger-grill-logo.png" alt="Marca de Agua" id="watermarkP" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); opacity: 0.5; width: 50%; pointer-events: none;">
+</div>
+    </div>
+
+
+
+
+<script>
+    // Elementos del DOM para mostrar los turnos, tiempos y animaciones
+    const turnosP = document.getElementById('turnosP'); // Turno de Ventanilla P
+    const turnosH = document.getElementById('turnosH'); // Turno de Ventanilla H
+    const columnP = document.getElementById('columnP'); // Columna de Ventanilla P
+    const columnH = document.getElementById('columnH'); // Columna de Ventanilla H
+    const animationContainer = document.getElementById('animationContainer'); // Animación general
+    const animationhotdogContainer = document.getElementById('animationhotdogContainer'); // Animación hotdog
+    const timerContainerP = document.querySelector('.timer #delay-timerP').closest('.timer'); // Contenedor del temporizador P
+    const timerContainerH = document.querySelector('.timer #delay-timerH').closest('.timer'); // Contenedor del temporizador H
+    const uri = "ws://localhost:8765"; // Dirección del WebSocket
+
+    const ws = new WebSocket(uri);
+
+    // Variables para almacenar los últimos mensajes recibidos
+    let lastMessageP = "";
+    let lastMessageH = "";
+
+    // Tiempo de demora específico para cada Ventanilla
+    let delayTimeP = 0; // Tiempo de demora para Ventanilla P (en segundos)
+    let delayTimeH = 0; // Tiempo de demora para Ventanilla H (en segundos)
+
+    // Variables para el estado de los temporizadores
+    let timerVisibleP = true;
+    let timerVisibleH = true;
+
+    // Control de estado de las animaciones
+    let animationRemovedP = false;
+    let animationRemovedH = false;
+
+    // Intervalo para el decremento de tiempo
+    let timerIntervalP;
+    let timerIntervalH;
+
+    // Evento de conexión WebSocket
+    ws.onopen = function() {
+        console.log("WebSocket conectado exitosamente a:", uri);
+    };
+
+    // Evento de recepción de mensaje desde el WebSocket
+    ws.onmessage = function(event) {
+        const message = event.data.trim(); // Limpiar el mensaje recibido
+        console.log("Mensaje recibido desde WebSocket:", message);
+
+        // Control de temporizadores según el mensaje recibido
+        if (message === "TIMER_ONP") {
+            console.log("Ocultando el contenedor del temporizador para Ventanilla P.");
+            timerContainerP.style.display = 'none';
+            timerVisibleP = false;
+            return;
+        }
+
+        if (message === "TIMER_OFFP") {
+            console.log("Mostrando el contenedor del temporizador para Ventanilla P.");
+            timerContainerP.style.display = 'block';
+            timerVisibleP = true;
+            return;
+        }
+
+        if (message === "TIMER_ONH") {
+            console.log("Ocultando el contenedor del temporizador para Ventanilla H.");
+            timerContainerH.style.display = 'none';
+            timerVisibleH = false;
+            return;
+        }
+
+        if (message === "TIMER_OFFH") {
+            console.log("Mostrando el contenedor del temporizador para Ventanilla H.");
+            timerContainerH.style.display = 'block';
+            timerVisibleH = true;
+            return;
+        }
+
+        // Procesar mensajes estándar
+        const parts = message.split(','); // Dividir el mensaje por coma para obtener acción y valor
+        if (parts.length === 2) {
+            const action = parts[0].trim();
+            const value = parts[1].trim();
+
+            if (action === "ADD_TIMEP") { // Incrementar tiempo para Ventanilla P
+                // El valor recibido está en minutos, lo convertimos a segundos y lo sumamos
+                delayTimeP += parseInt(value, 10) * 60; // Convertir minutos a segundos
+                updateTimerP();
+                startDecrementingP(); // Iniciar el decremento
+            } else if (action === "ADD_TIMEH") { // Incrementar tiempo para Ventanilla H
+                // El valor recibido está en minutos, lo convertimos a segundos y lo sumamos
+                delayTimeH += parseInt(value, 10) * 60; // Convertir minutos a segundos
+                updateTimerH();
+                startDecrementingH(); // Iniciar el decremento
+            } else if (action === "RESET_TIMEP") { // Reiniciar tiempo para Ventanilla P
+                delayTimeP = 0;
+                updateTimerP();
+                clearInterval(timerIntervalP); // Detener el temporizador si es necesario
+            } else if (action === "RESET_TIMEH") { // Reiniciar tiempo para Ventanilla H
+                delayTimeH = 0;
+                updateTimerH();
+                clearInterval(timerIntervalH); // Detener el temporizador si es necesario
+            } else { // Si es un pedido (turno)
+                const pedido = action;
+                const cajaNum = value;
+
+                if (cajaNum === "P") { // Turno para Ventanilla P
+                    if (lastMessageP !== pedido) {
+                        lastMessageP = pedido;
+                        turnosP.innerHTML = `P${pedido}`;
+                        turnosP.style.display = 'block';
+                        highlightColumn(columnP);
+
+                        // Ocultar animaciones para Ventanilla P
+                        if (!animationRemovedP) {
+                            animationhotdogContainer.style.display = 'none'; // Oculta la animación de Ventanilla P
+                            animationRemovedP = true;
+                        }
+                    }
+                } else if (cajaNum === "H") { // Turno para Ventanilla H
+                    if (lastMessageH !== pedido) {
+                        lastMessageH = pedido;
+                        turnosH.innerHTML = `H${pedido}`;
+                        turnosH.style.display = 'block';
+                        highlightColumn(columnH);
+
+                        // Ocultar animaciones para Ventanilla H
+                        if (!animationRemovedH) {
+                            animationContainer.style.display = 'none'; // Oculta la animación de Ventanilla H
+                            animationRemovedH = true;
+                        }
+                    }
+                }
+            }
+        } else {
+            console.error('Mensaje no válido recibido:', message);
+        }
+    };
+
+    // Evento cuando la conexión WebSocket se cierra
+    ws.onclose = function() {
+        console.log('Conexión WebSocket cerrada');
+    };
+
+    // Evento de error en WebSocket
+    ws.onerror = function(error) {
+        console.error("Error en WebSocket:", error);
+    };
+
+    // Función para resaltar la columna correspondiente
+    function highlightColumn(column) {
+        column.classList.add('highlight');
+        setTimeout(() => {
+            column.classList.remove('highlight');
+        }, 2000);
+    }
+
+    // Función para actualizar el temporizador de Ventanilla P (en formato mm:ss)
+    function updateTimerP() {
+    const delayTimerP = document.getElementById('delay-timerP');
+    const timerContainerP = delayTimerP.closest('.timer'); // Asumiendo que el contenedor tiene la clase "timer"
+    const minutes = Math.floor(delayTimeP / 60); // Convertir segundos a minutos
+    const seconds = delayTimeP % 60; // Obtener los segundos restantes
+    const formattedTime = `${padTime(minutes)}:${padTime(seconds)}`;
+
+    delayTimerP.textContent = formattedTime; // Actualizar en formato mm:ss
+
+    // Verificar si el temporizador llegó a 00:00
+    if (formattedTime === "00:00") {
+        timerContainerP.style.display = "none"; // Ocultar el contenedor completo
+    } else {
+        timerContainerP.style.display = "block"; // Mostrar el contenedor completo
+    }
+}
+
+    // Función para actualizar el temporizador de Ventanilla H (en formato mm:ss)
+    function updateTimerH() {
+    const delayTimerH = document.getElementById('delay-timerH');
+    const timerContainerH = delayTimerH.closest('.timer'); // Asumiendo que el contenedor tiene la clase "timer"
+    const minutes = Math.floor(delayTimeH / 60); // Convertir segundos a minutos
+    const seconds = delayTimeH % 60; // Obtener los segundos restantes
+    const formattedTime = `${padTime(minutes)}:${padTime(seconds)}`;
+
+    delayTimerH.textContent = formattedTime; // Actualizar en formato mm:ss
+
+    // Verificar si el temporizador llegó a 00:00
+    if (formattedTime === "00:00") {
+        timerContainerH.style.display = "none"; // Ocultar el contenedor completo
+    } else {
+        timerContainerH.style.display = "block"; // Mostrar el contenedor completo
+    }
+}
+
+    // Función para asegurar que los números de minutos y segundos tengan dos dígitos
+    function padTime(time) {
+        // Asegura que minutos y segundos siempre tengan dos dígitos
+        return time < 10 ? `0${time}` : time;
+    }
+
+    // Función para iniciar el decremento del temporizador de Ventanilla P
+    function startDecrementingP() {
+        if (timerIntervalP) clearInterval(timerIntervalP); // Limpiar intervalos previos
+        timerIntervalP = setInterval(function() {
+            if (delayTimeP > 0) {
+                delayTimeP--; // Decrementar en segundos
+                updateTimerP();
+            } else {
+                clearInterval(timerIntervalP); // Detener el intervalo cuando llega a 0
+            }
+        }, 1000); // Decrementar cada segundo
+    }
+
+    // Función para iniciar el decremento del temporizador de Ventanilla H
+    function startDecrementingH() {
+        if (timerIntervalH) clearInterval(timerIntervalH); // Limpiar intervalos previos
+        timerIntervalH = setInterval(function() {
+            if (delayTimeH > 0) {
+                delayTimeH--; // Decrementar en segundos
+                updateTimerH();
+            } else {
+                clearInterval(timerIntervalH); // Detener el intervalo cuando llega a 0
+            }
+        }, 1000); // Decrementar cada segundo
+    }
+
+    // Asegurarse de que el temporizador se inicialice correctamente al cargar la página
+    updateTimerP(); // Mostrar "00:00" para P
+    updateTimerH(); // Mostrar "00:00" para H
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

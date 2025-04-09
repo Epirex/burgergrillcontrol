@@ -1,0 +1,563 @@
+2024-11-19 17:50:20,781 - ERROR - keepalive ping failed
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\legacy\protocol.py", line 1242, in keepalive_ping
+    await asyncio.sleep(self.ping_interval)
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 638, in sleep
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2024-11-19 19:41:11,916 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x00000247B8B87070>()
+handle: <Handle <TaskStepMethWrapper object at 0x00000247B8B87070>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-6' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:68>> while another task <Task pending name='Task-2' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:109>> is being executed.
+2024-11-19 19:41:20,869 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:68>>
+2024-11-21 18:52:11,234 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x00000247236D5220>()
+handle: <Handle <TaskStepMethWrapper object at 0x00000247236D5220>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:98>> while another task <Task pending name='Task-6' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:123>> is being executed.
+2024-11-21 18:52:12,584 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:98>>
+2024-11-21 19:11:19,075 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000021904BD47C0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000021904BD47C0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-62' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:98>> while another task <Task pending name='Task-58' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:123>> is being executed.
+2024-11-21 19:11:22,368 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-62' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:98>>
+2024-11-21 19:19:07,286 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000021F464761F0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000021F464761F0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-22' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:71>> while another task <Task pending name='Task-18' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:126>> is being executed.
+2024-11-21 19:19:21,526 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000021F48F02970>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000021F48F02970>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-36' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:71>> while another task <Task pending name='Task-32' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:126>> is being executed.
+2024-11-21 19:19:33,128 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-22' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:71>>
+2024-11-21 19:19:33,128 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-36' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:71>>
+2024-11-21 19:19:37,790 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000021F468B4580>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000021F468B4580>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-46' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:101>> while another task <Task pending name='Task-42' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:126>> is being executed.
+2024-11-21 19:20:31,380 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-46' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:101>>
+2024-11-22 18:13:49,562 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000023F37D74AC0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000023F37D74AC0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:101>> while another task <Task pending name='Task-10' coro=<MainApp.on_button_click() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:147>> is being executed.
+2024-11-22 18:14:04,589 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:101>>
+2024-11-22 19:48:08,257 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-11-22 19:48:24,189 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-11-22 19:48:25,669 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-11-22 19:48:26,324 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-11-22 19:48:27,083 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-11-25 16:28:37,504 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-11-25 16:28:39,470 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-11-25 16:29:52,649 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000025FBA428DC0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000025FBA428DC0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-10' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:30:49,786 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 16:55:45,717 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE03A8DC0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE03A8DC0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-10' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:45,718 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE03A8D60>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE03A8D60>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-15' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:129>> while another task <Task pending name='Task-10' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:50,706 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE5095310>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE5095310>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-29' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-17' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:50,910 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE50A67C0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE50A67C0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-30' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-17' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:51,113 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE5257730>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE5257730>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-31' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-17' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:51,317 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE5257520>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE5257520>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-32' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-17' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:51,572 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE5257820>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE5257820>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-33' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-17' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:51,675 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000027DE5257040>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000027DE5257040>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-34' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-17' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 16:55:53,753 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 16:55:53,754 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-15' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:129>>
+2024-11-25 16:55:53,754 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-29' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 16:55:53,754 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-30' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 16:55:53,754 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-31' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 16:55:53,754 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-32' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 16:55:53,754 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-33' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 16:55:53,755 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-34' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 17:05:30,306 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000001A1F59E8DC0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001A1F59E8DC0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-10' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 17:05:32,994 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-14' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 17:08:48,154 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000001DB2E478CD0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001DB2E478CD0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-6' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 17:08:54,672 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 17:09:04,246 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000001DB32D85280>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001DB32D85280>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-52' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-48' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 17:09:12,255 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-52' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-11-25 17:15:22,072 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000001E524095550>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001E524095550>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-83' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:82>> while another task <Task pending name='Task-79' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-25 17:15:30,284 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-83' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:82>>
+2024-11-26 17:09:44,849 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000002ADA7CB27C0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000002ADA7CB27C0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-39' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:109>> while another task <Task pending name='Task-23' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-26 17:09:50,743 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-39' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:109>>
+2024-11-26 17:10:14,091 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000002ADA7E24FA0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000002ADA7E24FA0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-115' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:109>> while another task <Task pending name='Task-111' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:135>> is being executed.
+2024-11-26 17:10:17,829 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-115' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:109>>
+2024-11-28 19:38:47,907 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000011B54FAF5B0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000011B54FAF5B0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-6' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:82>> while another task <Task pending name='Task-2' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:146>> is being executed.
+2024-11-28 19:38:50,702 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-28 19:38:53,880 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-28 19:38:55,032 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-28 19:38:56,288 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-28 19:38:56,976 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-28 19:39:02,424 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-11-28 19:39:10,905 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-28 19:39:11,424 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-28 19:39:39,700 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:82>>
+2024-11-28 19:47:13,426 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-28 19:47:15,128 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-11-28 19:47:19,208 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-28 19:47:20,904 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000002812FF4C3A0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000002812FF4C3A0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-19' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:115>> while another task <Task pending name='Task-11' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:146>> is being executed.
+2024-11-28 19:47:22,760 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-28 19:47:24,552 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-28 19:47:52,660 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-19' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:115>>
+2024-11-29 17:03:40,374 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-11-29 17:03:40,375 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-11-29 17:03:51,711 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:03:59,131 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-29 17:03:59,659 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-29 17:04:00,122 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-29 17:04:00,547 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-29 17:04:03,283 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:03,706 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:03,866 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:04,035 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:04,210 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:04,410 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:04,586 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:04,742 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:04,906 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:05,099 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:05,283 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:05,458 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:05,634 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:05,810 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:06,010 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:06,202 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:06,387 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:06,578 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:06,771 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:06,983 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:07,187 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:07,362 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:07,699 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:07,906 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:08,107 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:08,298 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:08,619 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:08,930 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:04:10,611 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-11-29 17:04:12,126 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-29 17:04:12,955 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-29 17:21:41,895 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-11-29 17:21:41,896 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-11-29 17:21:45,768 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:21:46,947 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:21:47,395 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:21:47,585 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:21:48,962 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-11-29 17:21:50,825 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-29 17:21:51,441 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-11-29 17:23:56,566 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:23:57,538 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:32:30,934 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-11-29 17:32:30,935 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-11-29 17:33:08,741 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-11-29 17:33:08,741 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-11-29 17:33:13,714 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-11-29 17:33:24,249 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-11-29 17:33:27,177 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 17:09:43,768 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:09:43,769 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:09:47,239 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:10:33,358 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:19:40,587 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:19:40,587 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:19:44,524 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:21:51,268 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:26:58,018 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:26:58,018 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:27:01,878 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:27:15,216 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:27:15,733 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:27:18,953 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:27:19,148 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:27:19,334 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:27:19,532 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:28:52,285 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:28:52,285 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:28:55,419 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:31:15,641 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:31:15,642 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:31:19,720 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:32:41,047 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:32:45,237 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 17:32:46,203 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 17:32:47,454 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:36:10,413 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:36:10,413 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:36:19,995 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:40:51,369 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:40:51,369 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:40:57,438 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:41:07,218 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 17:41:07,871 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 17:41:08,797 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:43:43,038 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:43:43,039 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:43:46,793 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:43:55,196 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000001BCE3089AF0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001BCE3089AF0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:149>> while another task <Task pending name='Task-6' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:180>> is being executed.
+2024-12-02 17:43:57,145 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:43:57,336 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:43:59,176 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 17:43:59,785 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 17:44:01,125 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:149>>
+2024-12-02 17:45:58,840 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:45:58,840 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:46:02,032 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:46:10,863 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 17:46:11,681 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 17:46:12,747 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:47:07,970 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:47:07,970 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:47:16,446 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:51:09,763 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:51:09,764 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:51:24,252 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:52:12,112 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 17:52:17,207 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 17:57:30,274 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 17:57:30,274 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 17:57:36,883 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 18:10:13,480 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 18:10:13,480 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 18:10:29,063 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 18:11:00,209 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 18:11:00,209 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 18:11:10,378 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 18:16:30,270 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 18:16:30,271 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 18:16:35,912 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 18:40:35,325 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 18:40:35,325 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 18:40:38,897 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 18:40:50,145 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 18:40:50,847 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 18:40:52,526 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 18:49:59,840 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 18:49:59,840 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 18:50:03,348 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 18:50:06,711 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:03:06,444 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 19:03:06,444 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 19:03:13,314 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:03:19,880 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 19:03:20,581 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 19:03:21,212 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 19:03:22,007 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2024-12-02 19:03:23,324 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2024-12-02 19:03:25,637 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 19:03:34,761 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:09:47,246 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:09:48,886 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x00000287381A5070>()
+handle: <Handle <TaskStepMethWrapper object at 0x00000287381A5070>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-47' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>> while another task <Task pending name='Task-39' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:180>> is being executed.
+2024-12-02 19:09:53,564 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:09:55,071 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 19:09:59,167 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:20:04,407 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 19:20:05,871 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-47' coro=<MainApp.add_time() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:110>>
+2024-12-02 19:28:48,957 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 19:28:48,957 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 19:28:52,742 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:29:08,299 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:29:10,329 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 19:33:01,185 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 19:33:01,186 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 19:33:05,066 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH,10'
+2024-12-02 19:33:08,494 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: '1,H'
+2024-12-02 19:35:21,515 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 19:35:21,516 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 19:35:29,818 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH,10'
+2024-12-02 19:35:32,594 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: '1,H'
+2024-12-02 19:36:18,337 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 19:36:18,337 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-02 19:36:21,749 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:36:25,009 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:36:27,402 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:36:29,141 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:36:32,329 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 19:36:34,168 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-02 19:36:44,164 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x0000029386541EB0>()
+handle: <Handle <TaskStepMethWrapper object at 0x0000029386541EB0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-30' coro=<MainApp.on_button_click() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:184>> while another task <Task pending name='Task-26' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:180>> is being executed.
+2024-12-02 19:36:47,120 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-30' coro=<MainApp.on_button_click() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:184>>
+2024-12-02 19:37:13,134 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-02 19:52:07,458 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-02 19:52:07,459 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:26:20,143 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:26:20,144 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:26:20,389 - ERROR - Error inicializando pygame mixer o cargando sonido
+Traceback (most recent call last):
+  File "C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py", line 31, in <module>
+    pygame.mixer.music.load(alert_sound_path)  # Cargar sonido al inicio
+pygame.error: No file 'alarma2.mp3' found in working directory 'C:\Users\supranet\PycharmProjects\WebViewTurnos'.
+2024-12-04 17:27:42,628 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:27:42,628 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:27:46,778 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:28:57,330 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:28:57,330 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:29:05,193 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:38:39,689 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:38:39,690 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:38:43,479 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:42:35,579 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:42:35,579 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:42:43,822 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:44:08,691 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:44:08,692 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:44:13,950 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:44:21,811 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:46:08,032 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:46:08,032 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:46:11,307 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:53:38,539 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:53:38,540 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:53:41,851 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:54:33,126 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:54:33,126 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:54:36,362 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:58:08,464 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:58:08,464 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:58:12,131 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 17:59:47,868 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 17:59:47,869 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 17:59:51,471 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 18:00:20,698 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 18:00:20,698 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 18:00:22,106 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 18:01:48,447 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 18:02:36,841 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 18:02:36,842 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 18:02:40,274 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 18:04:47,337 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 18:04:47,338 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 18:04:51,225 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 18:04:55,606 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-04 18:05:33,013 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 18:06:56,862 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 18:06:56,863 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 18:07:00,560 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 18:59:43,325 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 18:59:43,325 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 18:59:47,167 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 19:05:19,152 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:05:19,153 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:05:30,279 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-12-04 19:05:31,903 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-12-04 19:06:41,928 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:06:41,928 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:06:45,545 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 19:12:45,118 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:12:45,118 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:12:52,628 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-12-04 19:12:58,103 - ERROR - Error al enviar el mensaje: [WinError 1225] El equipo remoto rechazó la conexión de red
+2024-12-04 19:13:18,865 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:13:18,865 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:13:22,500 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 19:13:50,013 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:13:50,014 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:13:53,287 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 19:17:57,900 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:17:57,900 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:18:00,991 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 19:18:19,884 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:18:19,885 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:18:23,536 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 19:18:54,208 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-04 19:18:54,209 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-04 19:18:57,367 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2024-12-04 19:19:26,153 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x00000214AFBE9B20>()
+handle: <Handle <TaskStepMethWrapper object at 0x00000214AFBE9B20>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:149>> while another task <Task pending name='Task-6' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:180>> is being executed.
+2024-12-04 19:19:27,180 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x00000214AFBE9AF0>()
+handle: <Handle <TaskStepMethWrapper object at 0x00000214AFBE9AF0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-11' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:149>> while another task <Task pending name='Task-6' coro=<MainApp.say_number_after_delay() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:180>> is being executed.
+2024-12-04 19:19:27,875 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-04 19:19:28,048 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2024-12-04 19:19:32,776 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-10' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:149>>
+2024-12-04 19:19:32,777 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<MainApp.send_message() running at C:\Users\supranet\PycharmProjects\WebViewTurnos\controlremotoH.py:149>>
+2024-12-12 17:09:49,035 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-12-12 17:09:49,035 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2024-12-12 17:09:55,589 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2025-04-03 11:10:38,796 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-03 11:10:38,797 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-04-03 11:11:37,553 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000001EB59F028E0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001EB59F028E0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-25' coro=<Queue.put() running at C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\queues.py:118>> while another task <Task pending name='Task-1' coro=<MainApp.process_queue() running at Y:\roman\WebViewTurnosv5\controlremotoH.py:240>> is being executed.
+2025-04-03 11:11:43,214 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-25' coro=<Queue.put() running at C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\queues.py:118>>
+2025-04-03 11:11:47,802 - ERROR - Exception in callback <TaskStepMethWrapper object at 0x000001EB57B695E0>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001EB57B695E0>()>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-33' coro=<Queue.put() running at C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\queues.py:118>> while another task <Task pending name='Task-1' coro=<MainApp.process_queue() running at Y:\roman\WebViewTurnosv5\controlremotoH.py:240>> is being executed.
+2025-04-03 11:13:04,350 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-33' coro=<Queue.put() running at C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\queues.py:118>>
+2025-04-03 11:13:14,464 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2025-04-04 10:15:08,361 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-04 10:15:08,363 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-04-04 10:16:05,232 - ERROR - Exception in callback <TaskWakeupMethWrapper object at 0x000001C09FCE95E0>(<Future finished result=None>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x000001C09FCE95E0>(<Future finished result=None>)>
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-13' coro=<MainApp.say_number_after_delay() running at Y:\roman\WebViewTurnosv5\controlremotoH.py:180> wait_for=<Future finished result=None>> while another task <Task pending name='Task-12' coro=<MainApp.say_number_after_delay() running at Y:\roman\WebViewTurnosv5\controlremotoH.py:184>> is being executed.
+2025-04-04 10:16:21,883 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-13' coro=<MainApp.say_number_after_delay() done, defined at Y:\roman\WebViewTurnosv5\controlremotoH.py:177> wait_for=<Future finished result=None>>
+2025-04-04 10:21:57,624 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-04 10:21:57,626 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-04-04 10:46:18,519 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-04 10:46:18,520 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-04-04 11:35:42,992 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\supranet\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-04-04 11:35:42,994 - INFO - Using writeable comtypes cache directory: 'C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-04-04 11:36:39,412 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'ADD_TIMEH'
+2025-04-04 11:36:50,999 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2025-04-04 11:36:51,089 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2025-04-04 11:36:51,950 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2025-04-04 11:36:55,316 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'RESET_TIMEH'
+2025-04-04 11:36:56,269 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'
+2025-04-04 11:36:57,368 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_ONH'
+2025-04-04 11:36:57,856 - ERROR - Error al enviar el mensaje: invalid literal for int() with base 10: 'TIMER_OFFH'

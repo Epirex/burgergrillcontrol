@@ -1,0 +1,23 @@
+2024-11-19 17:50:30,810 - ERROR - Error en el handler: no close frame received or sent
+2024-11-19 17:50:54,710 - ERROR - Error en el handler: no close frame received or sent
+2024-11-25 17:55:59,572 - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\legacy\server.py", line 245, in handler
+    await self.ws_handler(self)
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\legacy\server.py", line 1190, in _ws_handler
+    return await cast(
+  File "C:\Users\supranet\PycharmProjects\WebViewTurnos\appservidor.py", line 37, in handler
+    connected_clients.remove(websocket)
+KeyError: <websockets.legacy.server.WebSocketServerProtocol object at 0x0000023C7749CE80>
+2024-12-04 17:42:01,457 - ERROR - Error en el servidor WebSocket: [Errno 10048] error while attempting to bind on address ('::1', 8765, 0, 0): solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+2025-04-03 10:41:24,806 - ERROR - Error en el servidor WebSocket: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8765): solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+2025-04-04 10:22:37,832 - ERROR - Error en el servidor WebSocket: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8765): solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+2025-04-04 11:10:16,427 - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\legacy\server.py", line 245, in handler
+    await self.ws_handler(self)
+  File "C:\Users\supranet\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\legacy\server.py", line 1190, in _ws_handler
+    return await cast(
+  File "Y:\roman\WebViewTurnosv5\appservidor.py", line 37, in handler
+    connected_clients.remove(websocket)
+KeyError: <websockets.legacy.server.WebSocketServerProtocol object at 0x000001D1F40FEB20>
