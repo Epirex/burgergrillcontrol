@@ -126,6 +126,7 @@ class MainApp(QtWidgets.QMainWindow):
             # Enviar el comando al servidor
             message = f"ADD_TIMEH,{minutes}"
             await self.send_message(message)
+            await self.send_to_android(f"Tiempo añadido: {minutes} min")
         except Exception as e:
             logging.error("Error al enviar tiempo adicional", exc_info=True)
 
@@ -170,6 +171,16 @@ class MainApp(QtWidgets.QMainWindow):
             print(f"Error al enviar el mensaje: {e}")
             logging.error(f"Error al enviar el mensaje: {e}")
 
+    async def send_to_android(self, message):
+        try:
+            reader, writer = await asyncio.open_connection('192.168.1.54', 12345)
+            writer.write(f"{message}\n".encode())
+            await writer.drain()
+            writer.close()
+            await writer.wait_closed()
+        except Exception as e:
+            logging.error(f"Error al enviar a Android: {e}")
+
     def play_alert_sound(self):
         """Reproduce un sonido de alerta"""
         try:
@@ -198,6 +209,7 @@ class MainApp(QtWidgets.QMainWindow):
             try:
                 message = f"{number},{selected_box}"
                 await self.send_message(message)
+                await self.send_to_android(f"{selected_box}{number}")
                 self.play_alert_sound()
                 await self.say_number_after_delay(number)
                 self.ultimo_turno_enviado = number  # Actualizar último turno enviado
@@ -211,6 +223,7 @@ class MainApp(QtWidgets.QMainWindow):
         number = self.camponumerico.toPlainText().strip()
         if number.isdigit():
             asyncio.create_task(self.send_message(f"{number},{selected_box}"))
+            asyncio.create_task(self.send_to_android(f"{selected_box}{number}"))
             self.play_alert_sound()
             asyncio.create_task(self.say_number_after_delay(number))
             self.ultimo_turno_enviado = number  # Actualizar el último turno enviado
@@ -220,6 +233,7 @@ class MainApp(QtWidgets.QMainWindow):
         if self.ultimo_turno_enviado:
             self.play_alert_sound()
             asyncio.create_task(self.say_number_after_delay(self.ultimo_turno_enviado))
+            asyncio.create_task(self.send_to_android(f"{selected_box}{self.ultimo_turno_enviado}"))
 
     def increment_number(self):
         """Incrementa el número y lo añade a la cola para procesarlo en orden."""
@@ -248,6 +262,8 @@ class MainApp(QtWidgets.QMainWindow):
         message = "TIMER_ONH" if self.timer_active else "TIMER_OFFH"
         self.btnToggleTimer.setIcon(self.icon_pause if self.timer_active else self.icon_play)
         asyncio.create_task(self.send_message(message))
+        status = "activado" if self.timer_active else "desactivado"
+        asyncio.create_task(self.send_to_android(f"Temporizador {status}"))
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
