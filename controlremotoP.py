@@ -70,6 +70,8 @@ class MainApp(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainApp, self).__init__()
 
+        self.android_ips = self.load_android_ips()
+
         # Cargar la interfaz desde el archivo .ui
         try:
             uic.loadUi(resource_path('recursos/controlremotoP.ui'), self)
@@ -125,6 +127,8 @@ class MainApp(QtWidgets.QMainWindow):
         message = "TIMER_ONP" if self.timer_active else "TIMER_OFFP"
         self.btnToggleTimerP.setIcon(self.icon_pause if self.timer_active else self.icon_play)
         asyncio.create_task(self.send_message(message))
+        status = "activado" if self.timer_active else "desactivado"
+        asyncio.create_task(self.send_to_android(f"Temporizador {status}"))
 
     async def add_time(self, minutes):
         """Envía un comando para añadir tiempo y actualiza la interfaz"""
@@ -138,6 +142,7 @@ class MainApp(QtWidgets.QMainWindow):
             # Enviar el comando al servidor
             message = f"ADD_TIMEP,{minutes}"
             await self.send_message(message)
+            await self.send_to_android(f"Tiempo añadido: {minutes} min")
         except Exception as e:
             logging.error("Error al enviar tiempo adicional", exc_info=True)
 
@@ -164,6 +169,43 @@ class MainApp(QtWidgets.QMainWindow):
     def update_turn_label(self, turn_text):
         """Actualiza el texto del QLabel de turnos con un retardo para evitar sobrecarga"""
         self.turnLabelP.setText(turn_text)
+
+    def load_android_ips(self):
+        """Carga 3 direcciones IP desde el archivo templates/android_ips.txt"""
+        ip_path = os.path.join('templates', 'android_ips.txt')
+        try:
+            with open(ip_path, 'r') as f:
+                ips = [line.strip() for line in f.readlines() if line.strip()]
+
+                if len(ips) < 3:
+                    logging.error("El archivo debe contener 3 direcciones IP válidas (una por línea)")
+                    return []
+
+                return ips[:3]
+
+        except FileNotFoundError:
+            logging.error("Archivo android_ips.txt no encontrado en templates")
+            return []
+        except Exception as e:
+            logging.error(f"Error al leer las IPs: {e}")
+            return []
+
+    async def send_to_android(self, message):
+        """Envía el mensaje a los 3 dispositivos Android"""
+        if not self.android_ips:
+            logging.error("No hay direcciones IP configuradas")
+            return
+
+        for ip in self.android_ips:
+            try:
+                reader, writer = await asyncio.open_connection(ip, 12345)
+                writer.write(f"{message}\n".encode())
+                await writer.drain()
+                writer.close()
+                await writer.wait_closed()
+                logging.info(f"Enviado a {ip}")
+            except Exception as e:
+                logging.error(f"Error enviando a {ip}: {e}")
 
     async def send_message(self, message):
         uri = "ws://localhost:8765"
@@ -210,6 +252,7 @@ class MainApp(QtWidgets.QMainWindow):
             try:
                 message = f"{number},{selected_box}"
                 await self.send_message(message)
+                await self.send_to_android(f"{selected_box}{number}")
                 self.play_alert_sound()
                 await self.say_number_after_delay(number)
                 self.ultimo_turno_enviado = number  # Actualizar el último turno enviado
@@ -224,6 +267,7 @@ class MainApp(QtWidgets.QMainWindow):
         number = self.camponumerico_2.toPlainText().strip()
         if number.isdigit():
             asyncio.create_task(self.send_message(f"{number},{selected_box}"))
+            asyncio.create_task(self.send_to_android(f"{selected_box}{number}"))  # Añadir
             self.play_alert_sound()
             asyncio.create_task(self.say_number_after_delay(number))
             self.ultimo_turno_enviado = number  # Actualizar el último turno enviado
@@ -233,6 +277,7 @@ class MainApp(QtWidgets.QMainWindow):
         if self.ultimo_turno_enviado:
             self.play_alert_sound()
             asyncio.create_task(self.say_number_after_delay(self.ultimo_turno_enviado))
+            asyncio.create_task(self.send_to_android(f"{selected_box}{self.ultimo_turno_enviado}"))
 
     def increment_number(self):
         """Incrementa el número y lo añade a la cola para procesarlo en orden."""
