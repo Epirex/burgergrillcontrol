@@ -96,6 +96,9 @@ class MainApp(QtWidgets.QMainWindow):
         # Conectar el botón para resetear el timer
         self.btnResetTimer.clicked.connect(self.reset_timer)
 
+        # Cargar direcciones IP de Android
+        self.android_ips = self.load_android_ips()  # Lista de 3 IPs
+
         # Conectar botones numéricos al campo de texto
         for i in range(10):
             getattr(self, f'btn{i}').clicked.connect(lambda _, x=i: self.update_camponumerico(str(x)))
@@ -171,15 +174,42 @@ class MainApp(QtWidgets.QMainWindow):
             print(f"Error al enviar el mensaje: {e}")
             logging.error(f"Error al enviar el mensaje: {e}")
 
-    async def send_to_android(self, message):
+    def load_android_ips(self):
+        """Carga 3 direcciones IP desde el archivo templates/android_ips.txt"""
+        ip_path = os.path.join('templates', 'android_ips.txt')
         try:
-            reader, writer = await asyncio.open_connection('192.168.1.54', 12345)
-            writer.write(f"{message}\n".encode())
-            await writer.drain()
-            writer.close()
-            await writer.wait_closed()
+            with open(ip_path, 'r') as f:
+                ips = [line.strip() for line in f.readlines() if line.strip()]
+
+                if len(ips) < 3:
+                    logging.error("El archivo debe contener 3 direcciones IP válidas (una por línea)")
+                    return []
+
+                return ips[:3]
+
+        except FileNotFoundError:
+            logging.error("Archivo android_ips.txt no encontrado en templates")
+            return []
         except Exception as e:
-            logging.error(f"Error al enviar a Android: {e}")
+            logging.error(f"Error al leer las IPs: {e}")
+            return []
+
+    async def send_to_android(self, message):
+        """Envía el mensaje a los 3 dispositivos Android"""
+        if not self.android_ips:
+            logging.error("No hay direcciones IP configuradas")
+            return
+
+        for ip in self.android_ips:
+            try:
+                reader, writer = await asyncio.open_connection(ip, 12345)
+                writer.write(f"{message}\n".encode())
+                await writer.drain()
+                writer.close()
+                await writer.wait_closed()
+                logging.info(f"Enviado a {ip}")
+            except Exception as e:
+                logging.error(f"Error enviando a {ip}: {e}")
 
     def play_alert_sound(self):
         """Reproduce un sonido de alerta"""
