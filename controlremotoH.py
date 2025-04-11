@@ -176,7 +176,14 @@ class MainApp(QtWidgets.QMainWindow):
 
     def load_android_ips(self):
         """Carga 3 direcciones IP desde el archivo templates/android_ips.txt"""
-        ip_path = os.path.join('templates', 'android_ips.txt')
+        # Obtener la ruta base según si está empaquetado o no
+        if getattr(sys, 'frozen', False):
+            base_dir = os.path.dirname(sys.executable)  # Directorio del ejecutable
+        else:
+            base_dir = os.path.dirname(os.path.abspath(__file__))  # Directorio del script
+
+        ip_path = os.path.join(base_dir, 'templates', 'android_ips.txt')
+
         try:
             with open(ip_path, 'r') as f:
                 ips = [line.strip() for line in f.readlines() if line.strip()]
@@ -188,7 +195,7 @@ class MainApp(QtWidgets.QMainWindow):
                 return ips[:3]
 
         except FileNotFoundError:
-            logging.error("Archivo android_ips.txt no encontrado en templates")
+            logging.error(f"Archivo no encontrado: {ip_path}")
             return []
         except Exception as e:
             logging.error(f"Error al leer las IPs: {e}")
